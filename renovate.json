@@ -1,0 +1,24 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "branchPrefix": "renovate-",
+  "extends": [
+    "config:base",
+    "docker:pinDigests",
+    "docker:enableMajor",
+    "regexManagers:dockerfileVersions",
+    ":maintainLockFilesWeekly",
+    ":label(renovate)",
+    ":separateMajorReleases",
+    "group:allNonMajor",
+    ":preserveSemverRanges"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["dockerfile"],
+      "matchPackageNames": ["artifactory.cambiahealth.com/docker/openjdk"],
+      "matchCurrentVersion": "/^8/",
+      "replacementName": "artifactory.cambiahealth.com/docker/eclipse-temurin",
+      "replacementVersion": "8u352-b08-jdk"
+    }
+  ]
+}
