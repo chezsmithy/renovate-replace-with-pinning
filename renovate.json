@@ -15,9 +15,9 @@
   "packageRules": [
     {
       "matchManagers": ["dockerfile"],
-      "matchPackageNames": ["artifactory.cambiahealth.com/docker/openjdk"],
+      "matchPackageNames": ["openjdk"],
       "matchCurrentVersion": "/^8/",
-      "replacementName": "artifactory.cambiahealth.com/docker/eclipse-temurin",
+      "replacementName": "eclipse-temurin",
       "replacementVersion": "8u352-b08-jdk"
     }
   ]
