@@ -1,6 +1,6 @@
 services:
   java-runner:
-    image: openjdk:8-jdk-buster
+    image: eclipse-temurin:8u352-b08-jdk
     volumes:
       - .:/app
     working_dir: /app
