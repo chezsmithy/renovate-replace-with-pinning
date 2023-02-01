@@ -1,3 +1,0 @@
-FROM openjdk:8-jdk-buster as Builder
-
-# TESTING REPLACEMNT OF OPENJDK
