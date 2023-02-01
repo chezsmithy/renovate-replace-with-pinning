@@ -1,6 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "branchPrefix": "renovate-",
+  "extends": [
+    "docker:pinDigests"
+  ],
   "packageRules": [
     {
       "matchDatasources": ["docker"],
