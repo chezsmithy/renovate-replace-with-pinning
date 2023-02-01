@@ -1,0 +1,7 @@
+services:
+  java-runner:
+    image: openjdk:8-jdk-buster
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: java -jar /app/your-jar.jar
