@@ -1,6 +1,6 @@
 services:
   java-runner:
-    image: openjdk:8-jdk-buster
+    image: openjdk:8-jdk-buster@sha256:9babc11daaca6927dd9977d9e945b27550ddaa20a4de7743527b23fe3a079523
     volumes:
       - .:/app
     working_dir: /app
